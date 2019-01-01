@@ -1,0 +1,32 @@
+	<div >
+		<form ng-submit="addattendance()">
+        <div >
+		<form ng-submit="updateattendance()">
+    <div >
+      USN: 
+      <input type="text"  ng-model="attendance.usn" >
+    </div>
+
+    <div >
+       Name:
+      <input type="text"  ng-model="attendance.name" >
+    </div>
+
+    <div >
+       Subject 1:
+      <input type="text"  ng-model="attendance.sub1">
+    </div>
+
+    <div >
+       Subject 2:
+      <input type="text"  ng-model="attendance.sub2">
+    </div>
+
+    <div >
+         Subject 3:
+        <input type="text"  ng-model="attendance.sub3" >
+    </div>
+      <button type="submit" style="color:#5bc0de;" >Save</button>
+      <a href="#/attendance" > Cancel</a>
+    </form>		
+  </div>

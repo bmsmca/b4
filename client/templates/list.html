@@ -1,0 +1,32 @@
+<div  ng-init="getattendance()">
+	<p >attendance List</p>
+	<div >
+		<table border = 1 >
+			<thead>
+			<tr>
+			  <th>USN</th>
+			  <th>Student Name</th>
+			  <th>Subject 1</th>
+			  <th>Subject 2</th>
+			  <th>Subject 3</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="attnd in attendance">
+			  <td>{{ attnd.usn }}</td>
+			  <td>{{ attnd.name }}</td>
+			  <td>{{ attnd.sub1 }}</td>
+			  <td>{{ attnd.sub2 }}</td>
+			  <td>{{ attnd.sub3 }}</td>
+			  <td> 
+			    <a href="#/attendance/{{attnd._id}}/show" style="text-decoration:none;"> View  </a>
+			    <a href="#/attendance/{{attnd._id}}/edit" style="text-decoration:none;"> Update  </a>
+			  	<a ng-click="deleteattendance(attnd._id)" style="text-decoration:none;"> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>
+	<button onclick="print_win();">Print</button>		
+    <div>
+<div>
